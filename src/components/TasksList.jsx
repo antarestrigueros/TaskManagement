@@ -28,8 +28,18 @@ function TasksList() {
             <header className="flex justify-between">
               <h3>{task.title}</h3>
               <div className="flex gap-x-2">
-                <Link to={`/edit-task/${task.id}`} className="bg-zinc-600 px-2 py-1  rounded-md">Edit </Link>
-                <button onClick={() => handleDelete(task.id)} className="bg-red-500 px-2 py-1 rounded-md">Delete</button>
+                <Link
+                  to={`/edit-task/${task.id}`}
+                  className="bg-zinc-600 px-2 py-1  rounded-md"
+                >
+                  Edit{" "}
+                </Link>
+                <button
+                  onClick={() => handleDelete(task.id)}
+                  className="bg-red-500 px-2 py-1 rounded-md"
+                >
+                  Delete
+                </button>
               </div>
             </header>
             <p>{task.description}</p>

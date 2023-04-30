@@ -47,7 +47,9 @@ function TaskForm() {
 
   return (
     <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sm p-4">
-      <label htmlFor="tittle" className="block text-sm font-bold mb-2">Task:</label>
+      <label htmlFor="tittle" className="block text-sm font-bold mb-2">
+        Task:
+      </label>
       <input
         name="title"
         type="text"
@@ -56,7 +58,9 @@ function TaskForm() {
         value={task.title}
         className="w-full p-2 rounded-md bg-zinc-600 mb-2"
       />
-      <label htmlFor="description" className="block text-sm font-bold mb-2">Description:</label>
+      <label htmlFor="description" className="block text-sm font-bold mb-2">
+        Description:
+      </label>
       <textarea
         name="description"
         placeholder="description"
